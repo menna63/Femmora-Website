@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Store</title>
+    <style>
+        button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:rgb(58, 91, 10);
+}
+    </style>
+  
+    <script>
+        function validateSelection() {
+            const priceSort = document.getElementById("price-sort").value;
+            const typeSort = document.getElementById("type-sort").value;
+
+            
+        }
+
+    </script>
+</head>
+<body>
+
+    <div>
+        <label for="price-sort">Sort by Price:</label>
+        <select id="price-sort">
+            <option value="">Select Price Sort</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+        
+        <label for="type-sort">Sort by Type:</label>
+        <select id="type-sort">
+            <option value="">Select Type Sort</option>
+            <option value="rings">Rings</option>
+            <option value="necklaces">Necklaces</option>
+            <option value="bracelets">Bracelets</option>
+            <option value="earrings">Earrings</option>
+        </select>
+
+        <button onclick="return validateSelection()">Apply Sort</button>
+    </div>
+
+ <br>
+    <div>
+     
+        <div class="product">
+            <h3>Gold Ring</h3>
+            <img src="photos/1.jpg" alt="Gold Ring" width="200" length="400">
+            <p>Description: A beautiful gold ring with intricate designs.</p>
+            <p>Material: 18k Gold</p>
+            <button class="wishlist-btn">&#x1F6D2; Add to Wishlist</button>
+            <button class="cart-btn">&#x1F6D2; Add to Cart</button>
+            <button class="favorites-btn">&#x2764; Add to Favorites</button>
+        </div>
+
+       
+        <div class="product">
+            <h3>Silver Necklace</h3>
+            <img src="photos/2.jpg" alt="Silver Necklace" width="200" length="400">
+            <p>Description: A delicate silver necklace with a pendant.</p>
+            <p>Material: Sterling Silver</p>
+            <button class="wishlist-btn">&#x1F6D2; Add to Wishlist</button>
+            <button class="cart-btn">&#x1F6D2; Add to Cart</button>
+            <button class="favorites-btn">&#x2764; Add to Favorites</button>
+        </div>
+
+       
+        <div class="product">
+            <h3>Leather Bracelet</h3>
+            <img src="photos/3.jpg" alt="Leather Bracelet" width="200" length="400">
+            <p>Description: A trendy leather bracelet with metal accents.</p>
+            <p>Material: Genuine Leather, Stainless Steel</p>
+            <button class="wishlist-btn">&#x1F6D2; Add to Wishlist</button>
+            <button class="cart-btn">&#x1F6D2; Add to Cart</button>
+            <button class="favorites-btn">&#x2764; Add to Favorites</button>
+        </div>
+
+        <div class="product">
+            <h3>Diamond Earrings</h3>
+            <img src="photos/4.jpg" alt="Diamond Earrings" width="200" length="400">
+            <p>Description: Elegant diamond earrings that add sparkle to your look.</p>
+            <p>Material: Diamonds, White Gold</p>
+            <button class="wishlist-btn">&#x1F6D2; Add to Wishlist</button>
+            <button class="cart-btn">&#x1F6D2; Add to Cart</button>
+            <button class="favorites-btn">&#x2764; Add to Favorites</button>
+        </div>
+    </div>
+
+</body>
+</html>
