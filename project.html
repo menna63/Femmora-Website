@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="public/StyleSheet1.css">
+</head>
+<body>
+
+    <header>
+        <div class="topnav">
+            <form class="search-bar" action="" method="get">
+                <input type="text" name="search" placeholder="Search here..">
+                <button type="submit"><img src="public/photos/search.png" alt="search"></button>
+            </form>
+        </div>
+        <h1>Welcome to Our shopping page!</h1>
+    </header>
+
+    <hr />
+
+    
+    <section class="Grid" id="productContainer">
+        
+    </section>
+
+    <hr />
+
+    <!-- Cart Icon -->
+    <div class="cart-container">
+        <a href="checkout.html" class="cart-link">
+            🛒 <span id="cart-count">0</span> 
+        </a>
+    </div>
+
+    <hr />
+
+    
+    <div id="cartModal" class="cart-modal" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <button id="checkoutBtn">Proceed to Checkout</button>
+        <button id="closeCartBtn">Close</button>
+    </div>
+
+    <footer>
+        <div class="pagination">
+            <button onclick="changePage(1)">1</button>
+            <button onclick="changePage(2)">2</button>
+            <button onclick="changePage(3)">3</button>
+        </div>
+    </footer>
+
+    <script src="public/Script1.js"></script>
+</body>
+</html>
