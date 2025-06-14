@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femmora - Accessories</title>
+    <link rel="stylesheet" href="public/p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><h2 class="logo-text">Femmora</h2></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                <li class="nav-item"><a href="#promotions" class="nav-link">Promotions</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a> <i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
+              <!-- Authentication buttons -->
+            <button id="menu-toggle" class="fas fa-bars"></button>
+
+            <div class="auth-buttons">
+                <button id="login-btn" class="auth-btn">Login</button>
+                <button id="signup-btn" class="auth-btn">Sign Up</button>
+                <button id="logout-btn" class="auth-btn hidden">Log Out</button>
+            </div>
+        </nav>
+                <!----class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-time"></button>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">feauterd </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contant Us</a>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </li-->
+    
+           
+            
+    </header>
+          <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>Femmora</h2>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">chevron_left</span>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item">
+          <a href="project.html" class="nav-link">
+            <span class="material-symbols-rounded">shopping_bag</span>
+            <span class="nav_label">Shop</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="product.html" class="nav-link">
+            <span class="material-symbols-rounded">shopping_cart</span>
+            <span class="nav_label">Cart</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="checkout.html" class="nav-link">
+            <span class="material-symbols-rounded">payments</span>
+            <span class="nav_label">Checkout</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            <span class="material-symbols-rounded">mail</span>
+            <span class="nav_label">Contact Us</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            <span class="material-symbols-rounded">login</span>
+            <span class="nav_label">Login</span>
+          </a>
+            <hr>
+            <h4>Products</h4>
+            <a href="public/photos/15.jpg">Gold Necklace</a>
+            <a href="public/photos/13.jpg">Silver Bracelet</a>
+            <!-- Add more product links as needed -->
+        </nav>
+    </div>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <img src="public/photos/18.jpg" width="500"height="400" class="hero-image" alt="img">
+            <div class="hero-content">
+                <h1 class="title">Elegant Accessories for Every Occasion</h1>
+                <h2 class="subtitle">Our luxury brand is designed solely to make your beauty shine</h2>
+                <p class="description">Discover handpicked, stylish accessories that define your personality.</p>
+                <div class="buttons">
+                    <a href="#shop" class="button shop-now">Shop Now</a>
+                    <a href="#contact" class="button contact-us">Contact Us </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Product-->
+        <section id="shop" class="shop">
+            <h2>Featured</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="public/photos/WhatsApp Image 2025-04-08 at 00.32.06_39ade8e3.jpg" alt="Product 1">
+                    <h3>Gold Necklace</h3>
+                    <p>$49.99</p>
+                    <a href="#product-detail" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="public\photos\WhatsApp Image 2025-04-08 at 00.32.06_557e7285.jpg" alt="Product 2">
+                    <h3>Silver Bracelet</h3>
+                    <p>$29.99</p>
+                    <a href="#product-detail" class="button">View Details</a>
+                </div>
+            </div>
+        </section>
+         <!-- Promotions -->
+         <section id="promotions" class="promotions-section">
+            <h2>Special Offers</h2>
+            <p>Get up to 30% off on selected accessories. Limited time only!</p>
+        </section>
+        
+        <!-- About Us -->
+        <section id="about" class="about-section">
+            <h2>About Femmora</h2>
+            <p>We bring you the most exquisite and elegant accessories to complement your fashion statement.</p>
+        </section>
+
+        <!-- Product Detail Section -->
+        <section id="product-detail" class="product-detail-section">
+            <h2>Product Detail</h2>
+            <p>Details of the selected product will be displayed here.</p>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <p>Items in your cart will be listed here.</p>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="checkout-section">
+            <h2>Checkout</h2>
+            <p>Proceed with your order here.</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+        </section>
+    </main>
+
+    <script src="public/p.js"></script>
+</body>
+</html>
