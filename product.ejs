@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= product.name %> • Product Details</title>
+  <link rel="stylesheet" href="/css/product.css" />
+</head>
+<body>
+  <div class="product-container">
+    <div class="image-container">
+      <% if (product.image) { %>
+        <img 
+          id="product-image"
+          src="<%= product.image %>"
+          alt="<%= product.name %>"
+        />
+      <% } else { %>
+        <p>No image available</p>
+      <% } %>
+    </div>
+
+    <div class="product-info">
+      <h1 id="product-name"><%= product.name %></h1>
+      <p id="product-description"><%= product.description %></p>
+      <p id="product-price">$<%= product.price.toFixed(2) %></p>
+      <p><strong>Type:</strong> <%= product.type %></p>
+      <p><strong>Material:</strong> <%= product.material %></p>
+
+      <div class="buttons">
+        <button onclick="addToCart('<%= product.id %>')">Add to Cart</button>
+        <button onclick="addToWishlist('<%= product.id %>')">Add to Wishlist</button>
+        <button onclick="addToFavorites('<%= product.id %>')">Favorite</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/product.js"></script>
+</body>
+</html>
